@@ -21,7 +21,7 @@ h1, h2, h3 {
   font-family: 'Lato', sans-serif;
 }
 
-.home-callout, .navbar {
+.home-callout, .navbar { // Used for the gradient on both navbar and main callout
   // Gradient provided by : @_ighosh at uiGradients.com
   background: #2C3E50;  /* fallback for old browsers */
   background: -webkit-linear-gradient(left, #FD746C, #2C3E50);
@@ -34,7 +34,25 @@ h1, h2, h3 {
   border: none;
 }
 
-.home-callout {
+.navbar-default .navbar-brand,  { // Used for the 'Brand' button AKA devmatch on navbar
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a { // Used for the about button on the navbar
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover { // Used for the hover state on the 'Brand' Navbar button
+  color: white;
+  opacity: 0.75;
+}
+
+.navbar-default .navbar-nav > li > a:hover { // Used for the hover state on the 'About' navbar button
+  color: white;
+  opacity: 0.75;
+}
+
+.home-callout { // Main home page callout, 'Welcome to DevMatch' h1 as well as the h3 below.
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
