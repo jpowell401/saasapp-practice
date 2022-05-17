@@ -39,6 +39,7 @@ h1, h2, h3 {
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a  { // Used for the 'Brand' button AKA devmatch on navbar and About button
   color: white;
+  filter: blur(0.43px);
   transition: 1s;
   &:hover {
     color: white;
@@ -52,4 +53,5 @@ h1, h2, h3 {
   padding-top: 50px;
   padding-bottom: 100px;
   color: white;
+  filter:blur(0.43px)
 }
