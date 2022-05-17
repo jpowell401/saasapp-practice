@@ -34,22 +34,12 @@ h1, h2, h3 {
   border: none;
 }
 
-.navbar-default .navbar-brand,  { // Used for the 'Brand' button AKA devmatch on navbar
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a  { // Used for the 'Brand' button AKA devmatch on navbar and About button
   color: white;
-}
-
-.navbar-default .navbar-nav > li > a { // Used for the about button on the navbar
-  color: white;
-}
-
-.navbar-default .navbar-brand:hover { // Used for the hover state on the 'Brand' Navbar button
-  color: white;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover { // Used for the hover state on the 'About' navbar button
-  color: white;
-  opacity: 0.75;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
 .home-callout { // Main home page callout, 'Welcome to DevMatch' h1 as well as the h3 below.
