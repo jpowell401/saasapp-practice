@@ -33,20 +33,32 @@ h1, h2, h3 {
   background: linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Navbar styles
+
 .navbar {
   border: none;
 }
 
-.navbar-brand {
-  font-family: 'Lato', sans-serif;
-  font-weight: 800;
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a  { // Used for the 'Brand' button AKA devmatch on navbar and About button
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus{
+    background-color: #2C3E50;
+  }
+}
+
+// Used for the 'Brand' button AKA devmatch on navbar
+
+
+.navbar-default .navbar-brand { 
   color: white;
   filter: blur(0.3px);
-  transform: scale(0.9);
   transition: 0.3s;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
   &:hover {
     color: white;
     opacity: 0.75;
@@ -54,7 +66,28 @@ h1, h2, h3 {
   }
 }
 
-.home-callout { // Main home page callout, 'Welcome to DevMatch' h1 as well as the h3 below.
+// About button styles
+.navbar-default .navbar-nav > li > a { 
+  color: white;
+  filter: blur(0.3px);
+  transition: 0.3s;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+    font-size: 16px;
+  }
+}
+
+// This code makes sure the button takes up its intended space within the
+// Collapsed navbar menu
+@media only screen and (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    width: fit-content;
+  }
+}
+
+// Main home page callout, 'Welcome to DevMatch' h1 as well as the h3 below.
+.home-callout {
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
